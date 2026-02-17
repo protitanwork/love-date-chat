@@ -1,9 +1,15 @@
 import "./App.css";
 import logo from "./assets/logo.jpg";
+import type { CSSProperties } from "react";
 
 function App() {
+   const pageStyle: CSSProperties = {
+    backgroundImage: `url(${import.meta.env.BASE_URL}bg.jpg)`,
+  };
+
   return (
-    <div className="page">
+    <div className="page" style={pageStyle}>
+      
       <div className="container">
 
         <header className="header">
